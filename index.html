@@ -1,28 +1,35 @@
-<html>
-  <head><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta charset="utf-8">
-  </head>
-  <body>
-    <style>
-    body {
-    margin: 0;
-      }
-      iframe {
-      position:fixed;
-      top:0; 
-      left:0;
-      bottom:0; 
-      right:0; 
-      width:100vw;
-      height:100vh;
-      border:none; 
-      margin:0; 
-      padding:0; 
-      overflow:hidden; 
-      z-index:999999;
-      }
-    </style>
-  <iframe src="https://sefsdvc.com/en/us/media/dynamic/id?zid=11922&pid=0&custom1=&custom2=60670&custom3=%7Btransaction_id%7D&custom6=&custom7=PUB_142853&cturl=https://t.irtyf.com/ihxg01j1ds?file_id=252623&aff_id=142853&offer_id=3788&aff_sub=&url=" width="100vw" height="100vh"  scrolling="no" frameBorder="0">Ooops! Your browser doesn't support iFrames!</iframe>
-  </body>
+<html lang="en" class="no-js">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <style>
+      html body {width: 100%;height: 100%;padding: 0px;margin: 0px;overflow: hidden;font-family: arial;font-size: 10px;color: #6e6e6e;background-color: #000;} #preview-frame {width: 100%;background-color: #fff;}</style>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script>
+         //function to fix height of iframe!
+         var calcHeight = function() {
+           //var headerDimensions = 0; //$('#header-bar').height();
+           $('#preview-frame').height($(window).height());
+         }
+         
+         $(document).ready(function() {
+           calcHeight();
+           /*$('#header-bar a.close').mouseover(function() {
+             $('#header-bar a.close').addClass('activated');
+           }).mouseout(function() {
+             $('#header-bar a.close').removeClass('activated');
+           });*/
+         }); 
+         
+         $(window).resize(function() {
+           calcHeight();
+         }).load(function() {
+           calcHeight();
+         });
+      </script>
+   </head>
+   <body>
+      <iframe id="preview-frame" src="https://sefsdvc.com/en/us/media/dynamic/id?zid=11922&pid=0&custom1=&custom2=60670&custom3=%7Btransaction_id%7D&custom6=&custom7=PUB_142853&cturl=https://t.irtyf.com/ihxg01j1ds?file_id=252623&aff_id=142853&offer_id=3788&aff_sub=&url=" name="preview-frame" frameborder="0" noresize="noresize" style="height: 902px;">Oops! Your Breowser Doesn't Support iframe.
+      </iframe>
+   </body>
 </html>
